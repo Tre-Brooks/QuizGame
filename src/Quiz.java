@@ -7,14 +7,45 @@ public class Quiz implements ActionListener {
 	
 	String [] questions = {
 			
-	"Which company created Java?" , "Which year was Java created?" , "What was Java orginally called?"
+	"Which company created Java?" , "Which year was Java created?" , "What was Java orginally called?" , "Who is credited with creating java"
 							};
 	
 	String [][] options = {
 			{"Sun Microsystems" , "Starbucks" , "Microsoft" , "Alphabet"},
 			{"1989" , "1996" , "1972" , "1492"},
-			{"Apple" , "John" , "Cliff" , "Kotlin"}
+			{"Apple" , "John" , "Cliff" , "Kotlin"},
+			{"Jobs" , "Steve Jobs" , "Bill Gates" , "James Gosling"}
 						  };
+	
+	char [] answers = {
+				'A',
+				'B', 
+				'C'
+	};
+	
+	char guess;
+	char answer;
+	int index;
+	int correct = 0;
+	int totalques = questions.length;
+	int result;
+	int seconds = 10;
+	
+	JFrame frame = new JFrame();
+	JTextField textfield = new JTextField();
+	JTextArea textarea = new JTextArea();
+	JButton buttonA = new JButton();
+	JButton buttonB = new JButton();
+	JButton buttonC = new JButton();
+	JButton buttonD = new JButton();
+	JLabel answerLabelA = new JLabel();
+	JLabel answerLabelB = new JLabel();
+	JLabel answerLabelC = new JLabel();
+	JLabel answerLabelD = new JLabel();
+	JLabel time = new JLabel();
+	JLabel remainingSec = new JLabel();
+	JTextField numRight = new JTextField();
+	JTextField percentage = new JTextField();
 	
 	public Quiz() {
 		
