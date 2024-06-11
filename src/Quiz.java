@@ -48,6 +48,22 @@ public class Quiz implements ActionListener {
 	JTextField percentage = new JTextField();
 	
 	public Quiz() {
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(650,650);
+		frame.getContentPane().setBackground(new Color(50,50,50));
+		frame.setLayout(null);
+		frame.setResizable(false);
+		
+		textfield.setBounds(0,0,650,50);
+		textfield.setBackground(Color.white);
+		
+		
+		
+		
+		
+		
+		
+		frame.setVisible(true);
 		
 	}
 	
