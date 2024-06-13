@@ -56,13 +56,67 @@ public class Quiz implements ActionListener {
 		
 		textfield.setBounds(0,0,650,50);
 		textfield.setBackground(Color.white);
+		textfield.setForeground(new Color(25,255,0));
+		textfield.setFont(new Font("Ink Free", Font.PLAIN,29));
+		textfield.setBorder(BorderFactory.createBevelBorder(1));
+		textfield.setHorizontalAlignment(JTextField.CENTER);
+		textfield.setEditable(false);
+		
+		
+		textarea.setBounds(0,50,650,50);
+		textarea.setLineWrap(true);
+		textarea.setWrapStyleWord(true);
+		textarea.setBackground(Color.blue);
+		textarea.setForeground(new Color(25,255,0));
+		textfield.setFont(new Font("Ink Free", Font.PLAIN,29));
+		textfield.setBorder(BorderFactory.createBevelBorder(1));	
+		textfield.setEditable(false);
+		
+		buttonA.setBounds(0,100,100,100);
+		buttonA.setFont(new Font("MV Boli" , Font.BOLD,35));
+		buttonA.setFocusable(false);
+		buttonA.addActionListener(this);
+		buttonA.setText("A");
+		
+		buttonB.setBounds(0,200,100,100);
+		buttonB.setFont(new Font("MV Boli" , Font.BOLD,35));
+		buttonB.setFocusable(false);
+		buttonB.addActionListener(this);
+		buttonB.setText("B");
+		
+		buttonC.setBounds(0,300,100,100);
+		buttonC.setFont(new Font("MV Boli" , Font.BOLD,35));
+		buttonC.setFocusable(false);
+		buttonC.addActionListener(this);
+		buttonC.setText("C");
+		
+		buttonD.setBounds(0,400,100,100);
+		buttonD.setFont(new Font("MV Boli" , Font.BOLD,35));
+		buttonD.setFocusable(false);
+		buttonD.addActionListener(this);
+		buttonD.setText("D");
+		
+		answerLabelA.setBounds(125,100,500,100);
+		answerLabelA.setBackground(new Color(50,50,50));
+		answerLabelA.setForeground(new Color(25,155,0));
+		answerLabelA.setFont(new Font("MV Boli" , Font.PLAIN , 35));
+		
+		answerLabelA.setBounds(125,100,500,100);
+		answerLabelA.setBounds(125,100,500,100);
+		answerLabelA.setBounds(125,100,500,100);
+		
+		
+	
+
 		
 		
 		
-		
-		
-		
-		
+		frame.add(buttonA);
+		frame.add(buttonB);
+		frame.add(buttonC);
+		frame.add(buttonD);
+		frame.add(textarea);
+		frame.add(textfield);
 		frame.setVisible(true);
 		
 	}
