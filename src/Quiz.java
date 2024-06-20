@@ -126,8 +126,26 @@ public class Quiz implements ActionListener {
 		remainingSec.setHorizontalAlignment(JTextField.CENTER);
 		remainingSec.setText(String.valueOf(seconds));
 		
+		numRight.setBounds(225, 225, 200, 100);
+		numRight.setForeground(new Color(25,25,25));
+		numRight.setBackground( new Color(25,255, 0));
+		numRight.setFont(new Font("Ink Free" , Font.BOLD, 50));
+		numRight.setBorder(BorderFactory.createBevelBorder(1));
+		numRight.setHorizontalAlignment(JTextField.CENTER);
+		numRight.setEditable(false);
+		
+		
+		percentage.setBounds(225,325, 200,100);
+		percentage.setBackground( new Color(25,25, 25));
+		percentage.setForeground(new Color(25,255,0));
+		percentage.setFont(new Font("Ink Free" , Font.BOLD, 50));
+		percentage.setBorder(BorderFactory.createBevelBorder(1));
+		percentage.setHorizontalAlignment(JTextField.CENTER);
+		percentage.setEditable(false);
+		
 	
-
+		frame.add(numRight);
+		frame.add(percentage);
 		frame.add(remainingSec);
 		frame.add(answerLabelA);
 		frame.add(answerLabelB);
@@ -140,6 +158,8 @@ public class Quiz implements ActionListener {
 		frame.add(textarea);
 		frame.add(textfield);
 		frame.setVisible(true);
+		
+		nextQuestion();
 		
 	}
 	
